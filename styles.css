@@ -1,0 +1,114 @@
+/* styles for container carrying all robot parts */
+.robot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.head,
+.left-arm,
+.right-arm,
+.torso,
+.right-leg,
+.left-leg {
+  background-color: #5f93e8;
+}
+
+.head {
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 200px 200px 0 0;
+  margin-bottom: 10px;
+}
+
+/* stylesfor robots eye */
+.eye {
+    display: flex;
+}
+
+.left-eye, .right-eye {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.left-eye {
+    position: relative;
+    top: 100px;
+    left: 40px;
+}
+
+.right-eye {
+    position: relative;
+    top: 100px;
+    left: 120px;
+}
+
+.head:hover {
+    width: 300px;
+    transition: 1s ease-in-out;
+}
+
+/* styling container carrying robots arms and torso */
+.upper-body {
+    width: 300px;
+    height: 150px;
+    display: flex;
+}
+
+/* styling robot arms */
+.left-arm,
+.right-arm {
+    width: 40px;
+    height: 125px;
+    border-radius: 100px;
+}
+
+/* specific style for right arm */
+
+.right-arm {
+    margin-left: 10px;
+}
+
+/* specific style for left arm */
+.left-arm {
+    margin-right: 10px;
+}
+
+.torso {
+    width: 200px;
+    height: 200px;
+    border-radius: 0 0 50px 50px;
+
+}
+
+/* styles for container containing robot legs */
+.lower-body {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* style for legs */
+.left-leg,
+.right-leg {
+    width: 40px;
+    height: 120px;
+    border-radius: 0 0 100px 100px;
+}
+
+.left-leg {
+    margin-left: 45px;
+}
+
+.left-leg:hover {
+    transition: 0.6s;
+    transform: rotate(20deg);
+}
+
+.right-leg {
+    margin-left: 30px;
+}
